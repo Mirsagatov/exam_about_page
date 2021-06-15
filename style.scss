@@ -20,6 +20,7 @@ a {
 }
 .navbar {
     background-color: #F2F2F2;
+    background-color: #F2F2F2;
     position: sticky;
     top: 0;
     box-shadow: 0px 1px 10px #999;
@@ -28,6 +29,18 @@ a {
         padding: 15px 0;
         display: flex;
         align-items: center;
+        justify-content: flex-start;
+        #click {
+            display: none;
+        }
+        .menu-button {
+            i {
+                color: rgba(252, 183, 43, 1);
+                font-size: 22px;
+                display: none;
+            }
+
+        }
         .logo-name {
             font-size: 30px;
             width: 107.82px;
@@ -35,40 +48,47 @@ a {
             color: #495567;
             margin-right: 45px;
         }
-        .nav-list {
+        .nav {
+            width: 90%;
             display: flex;
-            align-items: center;
-            .nav-item {
-                margin-right: 30px;
-                .nav-item-link {
-                    color: rgba(147, 156, 170, 1);
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 15px;
-                    line-height: 25px;
-                    transition: .3s;
-                }
-                .nav-item-link:hover {
-                    color: rgba(252, 183, 43, 1);
+            justify-content: space-between;
+            
+
+            .nav-list {
+                display: flex;
+                align-items: center;
+                .nav-item {
+                    margin-right: 30px;
+                    .nav-item-link {
+                        color: rgba(147, 156, 170, 1);
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 15px;
+                        line-height: 25px;
+                        transition: .3s;
+                    }
+                    .nav-item-link:hover {
+                        color: rgba(252, 183, 43, 1);
+                    }
                 }
             }
-        }
-        .get-scootin {
-            color: rgba(255, 255, 255, 1);
-            padding: 14px 35px;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 15px;
-            line-height: 25px;
-            background-color: rgba(252, 183, 43, 1);
-            text-align: center;
-            margin-left: auto;
-            border: 3px solid #FCB72B;
-            transition: .3s;
-        }
-        .get-scootin:hover {
-            background-color: rgba(255, 255, 255, 1);
-            color: rgba(252, 183, 43, 1);
+            .get-scootin {
+                color: rgba(255, 255, 255, 1);
+                padding: 14px 35px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 25px;
+                background-color: rgba(252, 183, 43, 1);
+                text-align: center;
+                margin-left: auto;
+                border: 3px solid #FCB72B;
+                transition: .3s;
+            }
+            .get-scootin:hover {
+                background-color: rgba(255, 255, 255, 1);
+                color: rgba(252, 183, 43, 1);
+            }
         }
     }
     
